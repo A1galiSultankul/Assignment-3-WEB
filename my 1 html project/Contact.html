@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="500-5002380_icon-film-film-icon-hd-png-download.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="myScript.js"></script>
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <header style="background-color: #000; width: 100%;">
+        <img src="500-5002380_icon-film-film-icon-hd-png-download.png" alt="Picture">
+        <h1 class="ds">Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="linkk"><b>Home</b></a></li>
+                <li><a href="about.html" class="linkk"><b>About</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="form-container">
+            <form id="myForm" onsubmit="validateForm(event)" class="form">
+                <h2 style="color:white">Contact Us</h2>
+                <label style="color:white" for="name">Name:</label><br>
+                <input style="background-color:white" type="text" id="name" name="name" required><br>
+                <label style="color:white" for ="email">Email:</label><br>
+                <input style="background-color:white" type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+
+            <form id="ideaForm"  style="color:white" onsubmit="submitIdea(event)" class="form">
+                <h2>Give Ideas for Improving Our Website</h2>
+                <label for="idea">Idea:</label><br>
+                <textarea id="idea" name="idea" required></textarea><br><br>
+                <input type="submit" value="Submit Idea" class="submit-button">
+            </form>
+        </div>
+
+        <p id="error-msg" class="error"></p>
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+</div>
+
+<div id="Tab1" class="tabcontent" style="display: block;">
+    <h3>Film Overview</h3>
+    <p>Get ready to explore the fascinating world of cinema and its impact on culture.</p>
+</div>
+
+<div id="Tab2" class="tabcontent">
+    <h3>Famous Films</h3>
+    <p>Discover some of the most iconic and influential films that have shaped the industry.</p>
+</div>
+
+<div id="Tab3" class="tabcontent">
+    <h3>Film Analysis</h3>
+    <p>Dive deep into the themes, techniques, and symbolism employed by master filmmakers.</p>
+</div>
+
+    <footer>
+        <a href="index.html"><img src='500-5002380_icon-film-film-icon-hd-png-download.png' width=90px height=90px></a>
+        <p style="text-align:center;"><br>&copy; 2023 Top 10 films<br><br></p>
+        <h3 style="text-align:center">About</h3>
+        <p style="text-align:center">contact: +7718911744</p>
+        <p style="text-align:center;padding-bottom:40px;">instagram: @AigaliS</p>
+        <ul class="social-icons">
+          <li><a href="https://t.me/AigaliS" target="_blank"><img src="img.icons8.png"></a></li>
+          <li><a href="https://www.instagram.com/aigalisultankul_05/" target="_blank"><img src="icons8-instagram-48.png"></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=77718911744" target="_blank"><img src="icons8-whatsapp-48 (1).png"></a></li>
+      </ul>
+    </footer>
+</body>
+</html>
